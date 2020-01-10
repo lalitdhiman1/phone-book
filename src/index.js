@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Application from './App';
 import * as serviceWorker from './serviceWorker';
+let data = [];
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Application data={data} pollInterval={200}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
